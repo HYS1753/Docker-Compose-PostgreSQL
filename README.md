@@ -66,7 +66,7 @@
 
 - Access to database denied 에러
   ```
-  FATAL: no pg_hba.conf entry for host "192.168.56.1", user "testuser", database "test"..
+  FATAL: no pg_hba.conf entry for host "127.0.0.1", user "testuser", database "test"..
   ```
   - local의 Postgresql 디렉터리의 pg_hba.conf 파일 다음과 같이 수정(postgresql/data/pg_hba.conf)
     ```
