@@ -1,0 +1,14 @@
+version: "3.3"
+
+services:
+  postgres:
+    build:
+      context: .
+      dockerfile: ./dockerfile
+    container_name: PostgreSQL
+    env_file:
+      - ./.env
+    volumes:
+      - ./app:/usr/src/app
+    ports:
+      - 5432:5432
